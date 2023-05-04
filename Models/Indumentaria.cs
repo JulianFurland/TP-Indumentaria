@@ -2,11 +2,11 @@ public class Indumentaria{
 
     public string Medias {get;private set;}
     public string Pantalon {get;private set;}
-    public string Camiseta {get;private set;}
+    public string Remera {get;private set;}
 
-    public Indumentaria(string medias, string pantalon, string camiseta){
+    public Indumentaria(string medias, string pantalon, string remera){
         medias = Medias;
         pantalon = Pantalon;
-        camiseta = Camiseta;
+        remera = Remera;
     }
 }
