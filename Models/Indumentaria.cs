@@ -5,8 +5,8 @@ public class Indumentaria{
     public string Remera {get;private set;}
 
     public Indumentaria(string medias, string pantalon, string remera){
-        medias = Medias;
-        pantalon = Pantalon;
-        remera = Remera;
+        Medias = medias;
+        Pantalon = pantalon;
+        Remera = remera;
     }
 }

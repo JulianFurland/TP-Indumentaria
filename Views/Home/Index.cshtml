@@ -1,5 +1,25 @@
 ﻿@{
     ViewData["Title"] = "Index";
 }
-
-<button type="button">Seguir</button>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Views/Home/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1>TP4</h1>
+    <a href='@Url.Action("SelectIndumentaria")'><h2>Añadir Indumentaria</h2></a>
+    <br>
+    @foreach (string key in ViewBag.DicEquipos.Keys)
+    {
+        <div>
+            <h3>@key</h3>
+            <img src="/imgs/remeras/@ViewBag.DicEquipos[key].Remera" alt="Remera">
+        </div>
+    }
+</body>
+</html>

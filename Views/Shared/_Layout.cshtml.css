@@ -40,9 +40,13 @@ button.accept-policy {
 }
 
 .footer {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   position: absolute;
   bottom: 0;
   width: 100%;
   white-space: nowrap;
   line-height: 60px;
+}
+.header{
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
