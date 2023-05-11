@@ -12,10 +12,22 @@ html {
 
 body {
   margin: 20px 60px 0px 20px;
+  background-color: gray;
 }
 
 footer {
   position: fixed; 
   bottom: 0; 
   margin: 10px 0px 20px 0px;
+}
+h1{
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+h2{
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+div{
+  flex: auto;
+  float: left;
+  margin-left: 3rem;
 }

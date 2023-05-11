@@ -17,18 +17,11 @@ public class HomeController : Controller
         ViewBag.ListaRemeras = Equipos.ListaRemeras;
         return View();
     }
-    public IActionResult GuardarIndumentaria(string Equipo, string Medias, string Pantalon, string Remera)
+    public IActionResult GuardarIndumentaria(string Equipo, int Medias, int Pantalon, int Remera)
     {
-        if(Equipo == string.Empty || Medias == string.Empty || Pantalon == string.Empty || Remera == string.Empty)
-        {
-            ViewBag.Error = true;
-            return RedirectToAction("SelecIndumentaria");
-        }
-        else
-        {
-            Indumentaria ind = new Indumentaria(Medias, Pantalon, Remera);
-            Equipos.IngresarIndumentaria(Equipo,ind);
-            return RedirectToAction("Index");
-        }
+        Indumentaria ind = new Indumentaria(Equipos.ListaMedias[Medias-1], Equipos.ListaPantalones[Pantalon-1], Equipos.ListaRemeras[Remera-1]);
+        Equipos.IngresarIndumentaria(Equipo,ind);
+        return RedirectToAction("Index");
+        
     }
 }

@@ -9,26 +9,26 @@
 <body>
     <form action='@Url.Action("GuardarIndumentaria")'>
     @foreach (string item in ViewBag.ListaEquipos){
-        <input type="radio" id=@item name="Equipo" required>
+        <input type="radio" name="Equipo" value=@item required>
         <label for=@item>@item</label>
     }<br><br><br>
     @foreach(string item in ViewBag.ListaRemeras){
         <img src="/imgs/remeras/@item" alt="@item" height="100">
     }
         <label><h2>Seleccione Remera:</h2></label>
-        <input type="number" name = "Remera" value = "A" min="1" max="10" required>
+        <input type="number" name = "Remera" min="1" max="10" required>
     <br><br><br>
     @foreach(string item in ViewBag.ListaPantalones){
         <img src="/imgs/pantalones/@item" alt="@item" height="100">
     }
         <label><h2>Seleccione Pantalon:</h2></label>
-        <input type="number" name = "Pantalon" value = "A" min="1" max="10" required>
+        <input type="number" name = "Pantalon" min="1" max="10" required>
     <br><br><br>
     @foreach(string item in ViewBag.ListaMedias){
         <img src="/imgs/medias/@item" alt="@item" height="100">
     }
         <label><h2>Seleccione Medias:</h2></label>
-        <input type="number" name = "Medias" value = "A" min="1" max="10" required>
+        <input type="number" name = "Medias" min="1" max="10" required>
         <br><br><br>
         <input type="submit" value="Guardar">
     </form>
